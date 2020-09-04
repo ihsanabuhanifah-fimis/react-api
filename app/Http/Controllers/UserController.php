@@ -38,7 +38,7 @@ class UserController extends Controller
 
     public function show($id)
     {
-        $users = User::orderBy('id', 'DESC')->paginate(5);
+        $users = User::orderBy('id', 'DESC')->paginate($id);
         return new UserCollection($users);
     }
     public function update(Request $request)
