@@ -64,37 +64,16 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
+      <ol>
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
+            <li> Method Get Semua data di table users<span> <p>https://belajar-react.smkmadinatulquran.sch.id/api/users/2</p>Nilai 2 dapat di rubah</span></li>
+            <li> Method Get spesifik data di table user<span> <p>https://belajar-react.smkmadinatulquran.sch.id/api/users/update/2</p>Nilai 2 dapat di rubah</span></li>
+            <li> Method Get untuk menghapus data user<span> <p>https://belajar-react.smkmadinatulquran.sch.id/api/users/hapus/2</p>Nilai 2 dapat di rubah</span></li>
+            <li> Method POST Mencari data user yang relevan<span> <p>https://belajar-react.smkmadinatulquran.sch.id/api/users/cari</p>{ "cari" : "parameter"}</span></li>
+            <li> Method POST Menambahkan data ke table users<span> <p>https://belajar-react.smkmadinatulquran.sch.id/api/register</p>{ "username" :  "x", "name" : "x", "jenis_kelamin" : "x", "email" : "x@gmail.com", "password" : "x", "password_confimation" : "x"}</span></li>
+            <li> Method PUT mengupdate data users<span> <p>https://belajar-react.smkmadinatulquran.sch.id/api/users/update</p>{"username" : "x", "name" : "x", "email" : "x"}</span></li>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
-        </div>
+      </ol>
     </body>
 </html>
