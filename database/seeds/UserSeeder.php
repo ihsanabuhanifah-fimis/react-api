@@ -14,6 +14,7 @@ class UserSeeder extends Seeder
     public function run()
     {
         $faker = Faker::create('id_ID');
+        $gender = $faker->randomElement(['laki-laki', 'perempuan']);
         for($i=0;$i<50;$i++){
         User::create(
             [
@@ -22,7 +23,7 @@ class UserSeeder extends Seeder
                 'email_verified_at' => now(),
                 'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
                 'remember_token' => Str::random(10),
-                'jenis_kelamin' => '1',
+                'jenis_kelamin' => $gender,
                 'username' => strtolower($faker->username), 
                 'api_token' => Str::random(60)
 
