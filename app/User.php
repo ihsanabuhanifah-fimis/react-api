@@ -40,4 +40,31 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    // Saat Input data
+    public function setJenisKelaminAttribute($value)
+    {
+        switch($value){
+            case "laki-laki" :
+                $this->attributes['jenis_kelamin'] = 1;
+                break;
+            case "perempuan" :
+                $this->attributes['jenis_kelamin'] = 2;
+                break;
+        }
+        
+    }
+    //Saat Get data
+    public function getJenisKelaminAttribute($value)
+    {
+        switch($value){
+            case 1 :
+                return "laki-laki";
+                break;
+            case 2 :
+                return "perempuan";
+                break;
+        }
+        
+    }
 }
