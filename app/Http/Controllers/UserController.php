@@ -43,12 +43,14 @@ class UserController extends Controller
     }
     public function update(Request $request)
     {
-        $update = User::where('username', $request->username)->first()->update([
+        $update = User::where('id', $request->id)->first()->update([
             'name' => $request->name,
             'username' => $request->username,
             'email' => $request->email,
         ]);
-        return response()->json($update, 200);
+        return response()->json([
+            'message' => 'Alhamdulilah data berhasil diperbaharui'
+        ], 200);
          
        
         
@@ -73,6 +75,8 @@ class UserController extends Controller
     public function destroy($id)
     {
         User::find($id)->delete();
-        return response()->json("ok", 200);
+        return response()->json([
+            'message' => 'Alhamdulilah data berhasil terhapus'
+        ], 200);
     }
 }
