@@ -47,6 +47,8 @@ class UserController extends Controller
             'name' => $request->name,
             'username' => $request->username,
             'email' => $request->email,
+            'jenis_kelamin' => $request->jenis_kelamin
+            
         ]);
         return response()->json([
             'message' => 'Alhamdulilah data berhasil diperbaharui'

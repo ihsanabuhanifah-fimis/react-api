@@ -44,7 +44,7 @@ class User extends Authenticatable
     // Saat Input data
     public function setJenisKelaminAttribute($value)
     {
-        switch($value){
+        switch(strtolower($value)){
             case "laki-laki" :
                 $this->attributes['jenis_kelamin'] = 1;
                 break;

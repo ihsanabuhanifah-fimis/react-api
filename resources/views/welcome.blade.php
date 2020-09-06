@@ -67,12 +67,19 @@
       <ol>
 
 
-            <li> Method Get Semua data di table users<span> <p>https://belajar-react.smkmadinatulquran.sch.id/api/users/2</p>Nilai 2 dapat di rubah</span></li>
-            <li> Method Get spesifik data di table user<span> <p>https://belajar-react.smkmadinatulquran.sch.id/api/users/update/2</p>Nilai 2 dapat di rubah</span></li>
-            <li> Method Get untuk menghapus data user<span> <p>https://belajar-react.smkmadinatulquran.sch.id/api/users/hapus/2</p>Nilai 2 dapat di rubah</span></li>
-            <li> Method POST Mencari data user yang relevan<span> <p>https://belajar-react.smkmadinatulquran.sch.id/api/users/cari</p>{ "cari" : "parameter"}</span></li>
-            <li> Method POST Menambahkan data ke table users<span> <p>https://belajar-react.smkmadinatulquran.sch.id/api/register</p>{ "username" :  "x", "name" : "x", "jenis_kelamin" : "x", "email" : "x@gmail.com", "password" : "x", "password_confimation" : "x"}</span></li>
-            <li> Method PUT mengupdate data users<span> <p>https://belajar-react.smkmadinatulquran.sch.id/api/users/update</p>{"username" : "x", "name" : "x", "email" : "x"}</span></li>
+            <li> Method Get Semua data di table users
+                <span> <p>https://belajar-react.smkmadinatulquran.sch.id/api/users/2</p>Nilai 2 dapat di rubah</span></li>
+            <li> Method Get spesifik data di table user
+                <span> <p>https://belajar-react.smkmadinatulquran.sch.id/api/users/update/2</p>Nilai 2 dapat di rubah</span></li>
+            <li> Method Get untuk menghapus data user
+                <span> <p>https://belajar-react.smkmadinatulquran.sch.id/api/users/hapus/2</p>Nilai 2 dapat di rubah</span></li>
+            <li> Method POST Mencari data user yang relevan
+                <span> <p>https://belajar-react.smkmadinatulquran.sch.id/api/users/cari</p>{ "cari" : "parameter"}</span></li>
+            <li> Method POST Menambahkan data ke table users
+                <span> <p>https://belajar-react.smkmadinatulquran.sch.id/api/register</p>
+                { "username" :  "x", "name" : "x", "jenis_kelamin" : "laki-laki | perempuan", "email" : "x@gmail.com", "password" : "x", "password_confimation" : "x"}</span></li>
+            <li> Method PUT mengupdate data users
+                <span> <p>https://belajar-react.smkmadinatulquran.sch.id/api/users/update</p>{"username" : "x", "name" : "x", "email" : "x"}</span></li>
 
       </ol>
     </body>
