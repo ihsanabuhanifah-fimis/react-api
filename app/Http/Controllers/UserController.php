@@ -81,4 +81,25 @@ class UserController extends Controller
             'message' => 'Alhamdulilah data berhasil terhapus'
         ], 200);
     }
+
+    public function mail (Request $request)
+    {
+       
+        $email = User::where('email', $request->email)->first();
+        if(is_null($email)){
+            return response()->json('', 200);
+        } 
+        return response()->json('Email sudah digunakan', 200);
+        
+    }
+    public function username (Request $request)
+    {
+        $username = User::where('username', $request->username)->first();
+        if(is_null($username)){
+            return response()->json('', 200);
+        }else{
+            return response()->json('Username sudah digunakan', 200);
+        }
+        
+    }
 }

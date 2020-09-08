@@ -24,5 +24,7 @@ Route::get('/users/{id}', 'UserController@show');
 Route::put('/users/update/', 'UserController@update');
 Route::post('/users/cari','UserController@cari');
 Route::get('/users/hapus/{id}', 'UserController@destroy' );
+Route::post('/users/email', 'UserController@mail');
+Route::post('/users/username', 'UserController@username');
 
 
