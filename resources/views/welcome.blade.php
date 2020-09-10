@@ -79,7 +79,12 @@
                 <span> <p>https://belajar-react.smkmadinatulquran.sch.id/api/register</p>
                 { "username" :  "x", "name" : "x", "jenis_kelamin" : "laki-laki | perempuan", "email" : "x@gmail.com", "password" : "x", "password_confimation" : "x"}</span></li>
             <li> Method PUT mengupdate data users
-                <span> <p>https://belajar-react.smkmadinatulquran.sch.id/api/users/update</p>{"username" : "x", "name" : "x", "email" : "x"}</span></li>
+                <span> <p>https://belajar-react.smkmadinatulquran.sch.id/api/users/update</p>{"username" : "x", "name" : "x", "email" : "x"}</span>
+            </li>
+            <li> Method POST Mengecek email sudah digunakan
+                <span> <p>https://belajar-react.smkmadinatulquran.sch.id/api/users/email</p>{ "email" : "parameter@parameter.com"}</span></li>
+                <li> Method POST Mengecek username sudah digunakan
+                <span> <p>https://belajar-react.smkmadinatulquran.sch.id/api/users/username</p>{ "username" : "x"}</span></li>
 
       </ol>
     </body>

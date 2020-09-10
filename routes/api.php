@@ -18,13 +18,13 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('/identitas', 'UserController@create');
-Route::get('/users/update/{id}', 'UserController@detail');
-Route::get('/users/{id}', 'UserController@show');
-Route::put('/users/update/', 'UserController@update');
-Route::post('/users/cari','UserController@cari');
-Route::get('/users/hapus/{id}', 'UserController@destroy' );
-Route::post('/users/email', 'UserController@mail');
-Route::post('/users/username', 'UserController@username');
+Route::middleware('cors')->post('/identitas', 'UserController@create');
+Route::middleware('cors')->get('/users/update/{id}', 'UserController@detail');
+Route::middleware('cors')->get('/users/{id}', 'UserController@show');
+Route::middleware('cors')->put('/users/update/', 'UserController@update');
+Route::middleware('cors')->post('/users/cari','UserController@cari');
+Route::middleware('cors')->get('/users/hapus/{id}', 'UserController@destroy' );
+Route::middleware('cors')->post('/users/email', 'UserController@mail');
+Route::middleware('cors')->post('/users/username', 'UserController@username');
 
 
