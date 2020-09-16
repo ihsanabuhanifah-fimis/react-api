@@ -23,6 +23,7 @@ class PopulerResource extends JsonResource
             'jumlah' => $this-> populer_jumlah,
             'rating' => $this-> populer_rating,
             'image' =>  "https://belajar-react.smkmadinatulquran.sch.id/". $this-> populer_img,
+            'pesan' => ''
             
         ];
     }
