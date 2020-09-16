@@ -18,7 +18,7 @@ class CategoryResource extends JsonResource
         [
             'id' => $this->id,
             'name' => $this-> category_name,
-            'img' => $this-> img
+            'img' => "https://belajar-react.smkmadinatulquran.sch.id/". $this->img
         ];
     }
 }
