@@ -27,4 +27,10 @@ Route::middleware('cors')->get('/users/hapus/{id}', 'UserController@destroy' );
 Route::middleware('cors')->post('/users/email', 'UserController@mail');
 Route::middleware('cors')->post('/users/username', 'UserController@username');
 
+// Route API
+Route::middleware('cors')-> post('/category/tambah','CategoryController@create');
+Route::middleware('cors')-> post('/populer/tambah','PopulerController@create');
+Route::middleware('cors')-> get('/populer/{id}','PopulerController@index');
+Route::middleware('cors')-> get('/category/{id}','CategoryController@show');
+Route::middleware('cors')-> post('/populer/','PopulerController@show');
 
